@@ -2,8 +2,8 @@
     <nav class="navbar d-flex justify-content-between fixed-top border border-light px-3">
         <div>
             <span class="navbar-brand mb-0 h1 text-light">Car Rental</span>
-            <a class="me-4" href="">Home</a>
-            <a href="">Contact</a>
+            <a class="me-4" routerLink="/">Home</a>
+            <a routerLink="contact">Contact</a>
         </div>
 
         <ng-template [ngIf]="donation > 190" [ngIfElse]="none">
