@@ -1,22 +1,22 @@
-<div class="container-fluid text-dark">
-    <nav class="navbar d-flex justify-content-between ">
+<div class="container-fluid">
+    <nav class="navbar d-flex justify-content-between fixed-top border border-light px-3">
         <div>
-            <span class="navbar-brand mb-0 h1">Car Rental</span>
+            <span class="navbar-brand mb-0 h1 text-light">Car Rental</span>
             <a class="me-4" href="">Home</a>
             <a href="">Contact</a>
         </div>
 
         <ng-template [ngIf]="donation > 190" [ngIfElse]="none">
-            <span>You are a VIP</span>
+            <span class="text-light">You are a VIP</span>
         </ng-template>
         <ng-template #none>
-            <span>donate more!</span>
+            <span class="text-light">donate more!</span>
         </ng-template>
 
 
         <div>
             <button class="btn btn-outline-success" type="submit" (click)="donationCount()">Donate 10€</button>
-            <span>You donated: {{donation}} €</span>
+            <span class="text-light">You donated: {{donation}} €</span>
         </div>
 
     </nav>
