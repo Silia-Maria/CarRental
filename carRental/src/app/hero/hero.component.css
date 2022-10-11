@@ -1,0 +1,7 @@
+.hero {
+    background-image: url(/assets/images/hero2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 0 40%;
+    height: 60vh;
+}
