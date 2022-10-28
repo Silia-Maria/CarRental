@@ -18,7 +18,8 @@ export class ContactComponent implements OnInit {
     cardName: new FormControl("",Validators.required),
     cardNumber: new FormControl("",Validators.required),
     expDate: new FormControl("",Validators.required),
-    cvc: new FormControl("",Validators.required),      
+    cvc: new FormControl("",Validators.required), 
+    gtc: new FormControl("", Validators.required),   
   })
 
   constructor() { }
