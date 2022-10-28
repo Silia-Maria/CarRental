@@ -1,21 +1,8 @@
-<div class="container my-5">
-    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-        <div class="col" *ngFor="let car of cars">
-            <div class="card">
-                <img src="{{car.img}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title mb-3">{{car.name}}</h5>
-                    <div class="d-flex justify-content-between">
-                        <p><i class="fa-regular fa-user"></i> {{car.seats}} seats</p>
-                        <p><i class="fa-regular fa-circle-check"></i> {{car.transmission}}</p>
-                    </div>
-                    <div class="d-flex align-items-end flex-column mt-3">
-                        <p class="fs-3">{{car.price}}€ / per day</p>
-                        <p class="text-success"><i class="fa-solid fa-check"></i> free cancellation</p>
-                        <button type="button" class="btn btn-success">View Deal</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="hero">
+    <app-navbar></app-navbar>
+    <div class="heroHeading text-center ">
+        <h1 class="mb-3 text-uppercase">Premium Car Rental in New York!</h1>
+        <p class="px-5 mx-5">Don't deny yourself the pleasure of the best premium cars from around the world here and now</p>
     </div>
+
 </div>

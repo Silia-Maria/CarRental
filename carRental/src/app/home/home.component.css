@@ -1,0 +1,14 @@
+.hero {
+    background-image: url(/assets/images/hero6.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.heroHeading {
+    width: 50%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+}

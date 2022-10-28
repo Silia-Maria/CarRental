@@ -16,4 +16,15 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+   navToggle() {
+    var links: any = document.getElementById("navLinks");
+    if (links.style.display == "block") {
+      links.style.display = "none";
+
+    } else {
+      links.style.display = "block";
+    }
+    
+  }
+
 }

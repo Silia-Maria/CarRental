@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarsComponent } from './cars/cars.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeroComponent,
     HomeComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,

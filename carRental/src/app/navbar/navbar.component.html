@@ -1,12 +1,25 @@
 <div class="container-fluid">
-    <nav class="navbar d-flex justify-content-between fixed-top border border-light px-3">
+    <nav class="navBar d-flex justify-content-between fixed-top p-3">
+
         <div>
-            <span class="navbar-brand mb-0 h1 text-light">Car Rental</span>
-            <a class="me-4" routerLink="/">Home</a>
-            <a routerLink="contact">Contact</a>
+            <span class="navbar-brand mb-0 text-light text-uppercase me-4 " routerLink="/">Unique.</span>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" (click)="navToggle()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- Navigation Links hidden by default -->
+            <div id="navLinks">
+
+                <div><a class="me-4 fs-5" routerLink="cars">Cars</a></div>
+                <div><a class="fs-5" routerLink="contact">Contact</a></div>
+            </div>
         </div>
 
-        <ng-template [ngIf]="donation > 190" [ngIfElse]="none">
+
+        <!-- Donation -->
+
+        <!-- <ng-template [ngIf]="donation > 190" [ngIfElse]="none">
             <span class="text-light">You are a VIP</span>
         </ng-template>
         <ng-template #none>
@@ -17,7 +30,7 @@
         <div>
             <button class="btn btn-outline-success" type="submit" (click)="donationCount()">Donate 10€</button>
             <span class="text-light">You donated: {{donation}} €</span>
-        </div>
+        </div> -->
 
     </nav>
 </div>

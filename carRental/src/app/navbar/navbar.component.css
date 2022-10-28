@@ -1,4 +1,12 @@
-a {
+.navBar {
+    font-size: 170%;
+}
+
+.navBar a {
     color: white;
     text-decoration: none;
+}
+
+#navLinks {
+    display: none;
 }
