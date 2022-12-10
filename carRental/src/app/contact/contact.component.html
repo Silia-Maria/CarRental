@@ -4,116 +4,20 @@
     </div>
 </div>
 
-<!-- Form Container -->
-
-<div class="container border border-dark rounded  myform mt-5">
-    <div class="form-content">
-        <h3 class="my-3 text-center">Main driver's details</h3>
-        <p class="text-center">*As they appear on driver's licence</p>
-
-        <!-- First Form Start-->
-        <form [formGroup]="info">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control myinput" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
-                <p class="small text-secondary">*Just to share the confirmation email and voucher.</p>
+<div class="container my-5">
+    <div class="row row-cols-1 row-cols-lg-2 ">
+        <div class="col">
+            <h3>UNIQUE. </h3>
+            <h5>Car Rental New York</h5>
+            <div class="mt-4">
+                <p>24h Comstumer Service:</p>
+                <p><i class="fa-solid fa-phone-flip me-2"></i> 001 934928484-23</p>
             </div>
-            <div class="mb-3">
-                <label for="">Title</label>
-                <select class="form-select myinput my-2" aria-label="Default select example" formControlName="title">
-                <option value="1" selected>Please Select</option>
-                <option>Mrs</option>
-                <option value="1">Ms</option>
-                <option value="2">Mr</option>
-                <option value="3">Dr</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">First Name:</label>
-                <input type="text" class="form-control myinput" formControlName="firstName">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Last Name:</label>
-                <input type="text" class="form-control myinput" formControlName="lastName">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control myinput" id="exampleInputPassword1" formControlName="password">
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Contact Number</label>
-                <input type="email" class="form-control myinput" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="number">
-                <p class="small text-secondary">*So we can call if any problems come up</p>
-            </div>
-            <div class="mb-3">
-                <label for="">Country of residence</label>
-                <select class="form-select myinput my-2" aria-label="Default select example" formControlName="country">
-                <option value="1" selected>Austria</option>
-                <option>Germany</option>
-                <option value="1">Denmark</option>
-                <option value="2">Sweden</option>
-                <option value="3">Croatia</option>
-              </select>
-            </div>
-
-        </form>
-
-        <!-- First Form End -->
-    </div>
-</div>
-
-<!-- 2. Form Container -->
-<div class="container border border-dark rounded myform cardInfo my-4">
-    <div class="form-content">
-        <h3 class="my-3 text-center">How would you like to pay?</h3>
-        <div class="text-center">
-            <i class="fa-brands fa-cc-visa me-3"></i>
-            <i class="fa-brands fa-cc-mastercard me-3"></i>
-            <i class="fa-brands fa-cc-amex"></i>
         </div>
 
-        <!-- Second Form Start-->
-        <form class="mt-5" [formGroup]="info">
-            <div class="row">
-                <div class="mb-3 col">
-                    <label for="exampleInputEmail1" class="form-label">Cardholder's Name *</label>
-                    <input type="email" class="form-control myinput" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="cardName">
-                </div>
-
-                <div class="mb-3 col">
-                    <label for="exampleInputEmail1" class="form-label">Card Number *</label>
-                    <input type="text" name="" id="" class="form-control myinput" formControlName="cardNumber">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <label for="exampleInputEmail1" class="form-label">Expiration Date *</label>
-                    <input type="text" name="" id="" class="form-control myinput" formControlName="expDate">
-                </div>
-                <div class="col">
-                    <label for="exampleInputEmail1" class="form-label">CVC *</label>
-                    <input type="text" name="" id="" class="form-control myinput" formControlName="cvc">
-                </div>
-
-            </div>
-            <!-- Submit -->
-            <div class="text-center mt-5">
-                <div>
-                    <input type="checkbox" name="gtc" id="gtc" class="me-2" formControlName="gtc">
-                    <label for="gtc" class="small text-secondary">By ticking, you are confirming that you have read, understood and agree to UNIQUE. terms and conditions.</label>
-                </div>
-                <div class="mb-3 form-check">
-
-                    <button type="submit" class="finalBtn" [disabled]="!info.valid">Send offer now!</button>
-                </div>
-            </div>
-        </form>
-        <!-- Second Form End -->
-
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.782870618409!2d-73.98860697109555!3d40.76680011320006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25858f5bb2a5b%3A0xf75d18ec7db6bf5f!2sCar%20Rental%20Manhattan!5e0!3m2!1sde!2sat!4v1670693768823!5m2!1sde!2sat"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </div>
-
-<!-- Button -->
