@@ -22,9 +22,14 @@ export class OfferComponent implements OnInit {
     gtc: new FormControl("", Validators.required),
   })
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+
   }
+
+
 
 }

@@ -12,7 +12,7 @@
         <p class="text-center">*As they appear on driver's licence</p>
 
         <!-- First Form Start-->
-        <form [formGroup]="info">
+        <form [formGroup]="info" class="getOfferForm">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control myinput" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
@@ -76,7 +76,7 @@
         </div>
 
         <!-- Second Form Start-->
-        <form class="mt-5" [formGroup]="info">
+        <form class="mt-5" [formGroup]="info" class="getOfferForm">
             <div class="row">
                 <div class="mb-3 col">
                     <label for="exampleInputEmail1" class="form-label">Cardholder's Name *</label>
@@ -107,7 +107,9 @@
                 </div>
                 <div class="mb-3 form-check">
 
-                    <button type="submit" class="finalBtn" [disabled]="!info.valid">Get free offer now!</button>
+                    <!--<button type="submit" class="finalBtn" [disabled]="!info.valid">Get free offer now!</button> -->
+                    <button class="btn btn-primary" type="reset" [disabled]="!info.valid">Get offer</button>
+
                 </div>
             </div>
         </form>
