@@ -42,3 +42,8 @@
     border: none;
     text-transform: uppercase;
 }
+
+.finalBtn:disabled,
+.finalBtn[disabled] {
+    background-color: grey;
+}
